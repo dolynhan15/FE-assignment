@@ -1,0 +1,69 @@
+.manager-question{
+    .container{
+        .table{
+           
+            .btn-edit{
+                margin-right: 10px;
+                border: 1px solid rgb(49, 164, 231);
+            }
+            .btn-delete{
+                border: 1px solid rgba(236, 91, 91, 0.932);
+            }
+            .btn-delete span:hover{
+                color: red;
+            }
+            .ant-table-cell{
+                text-align: center;
+            }
+            
+        }
+    }
+}
+@media (max-width: 536px){
+    .manager-question {
+        .container {
+                .table {
+                    .btn-delete{
+                            margin-top: 5px;
+                        }            
+                }
+            }
+        }
+}
+.ant-table {
+    display: block;
+  
+    @media screen and (max-width: 500px) {
+      &-thead {
+        display: none;
+      }
+  
+      &-thead>tr,
+      &-tbody>tr {
+  
+        th,
+        td {
+          &:first-of-type {
+            padding-top: 1rem;
+          }
+  
+          &:last-of-type {
+            padding-bottom: 1rem;
+          }
+        }
+  
+        >th,
+        >td {
+          display: block;
+          width: auto !important;
+          border: none;
+          padding: 0 1rem;
+          font-size: 1.1rem;
+  
+          &:last-child {
+            border-bottom: 1px solid #eee;
+          }
+        }
+      }
+    }
+}

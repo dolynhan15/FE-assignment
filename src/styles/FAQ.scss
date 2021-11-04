@@ -1,0 +1,166 @@
+.faq{
+    .container{
+        margin-top: 25px;
+        .btn-newques{
+            text-align: right;
+            a{
+                text-decoration: none;
+                display: block;
+
+                button{
+                    padding: 8px 35px;
+                    background-color: #1e6c93;
+                    border: none;
+                    color: white;
+                    font-family: Lato, sans-serif;
+                    font-size: 12pt;
+                    line-height: normal;
+                    border-radius: 3px;
+                }
+            }
+            
+        }
+        .content{
+            margin-top: 55px;
+            .content-faq{
+                display: flex;
+                flex-direction: column;
+                .c-question{
+                    display: flex;
+                    .avatar{
+                        width: 70px;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .question-text{
+                        float: right;
+                        p{
+                            padding: 10px 30px;
+                            margin-left: 15px;
+                            margin-bottom: 0px;
+                            color: #741B94;
+                            span{
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+                .c-answer{
+                    display: flex;
+                    float: right;
+                    margin-top: 50px;
+                    .list-answer{
+                        margin-right: 80px;
+                        margin-top: 30px;
+                        ul{
+                            float: right;
+                        }
+                    }
+                    .avatar-answer{
+                        width: 70px;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+                .comment{
+                    display: flex;
+                    margin-top: 50px;
+                    margin-bottom: 50px;
+                    .avatar-answer{
+                        width: 70px;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .c-input{
+                        margin-top: 15px;
+                        margin-left: 30px;
+                        input{
+                            padding: 10px 30px;
+                            margin-left: 15px;
+                            margin-bottom: 0px;
+                            border: none;
+                            background-color: #ffc0cb42;
+                        }
+                        button{
+                            border: none;
+                            padding: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .pagination {
+            margin-top: 25px;
+            float: right;
+            ul{
+                list-style: none;
+                display: flex;
+                align-items: center;
+                li{
+                    margin-right: 10px;
+                    cursor: pointer;
+                    padding: 5px;
+                }
+                .page-active {
+                    border: 1px solid gainsboro;
+                }
+            }
+            
+        }
+       
+    }
+};
+@media (max-width: 500px){
+    .faq{
+        .container{
+            .btn-newques{
+                text-align: center;
+            }
+            .content{
+                .content-faq{ 
+                    .c-question{
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    .c-answer{
+                        display: flex;
+                        flex-direction: column;
+                        .list-answer{
+                            margin-right: 0px; 
+                            margin-top: 0px;
+                        }
+                    }
+                    .comment{
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: unset;
+                        margin-bottom: 30px;
+                        .c-input {
+                            input{
+                                padding: unset;
+                                margin-left: unset;}
+                        }             
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 182px){
+    .faq{
+        .container{
+            padding: unset;
+            .btn-newques{
+                text-align: unset;
+                a{
+                    button{
+                        padding: 5px 10px;
+                    }
+                }               
+            }
+        }
+    }
+}

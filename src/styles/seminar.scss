@@ -1,0 +1,135 @@
+.example{
+    text-align: center;
+}
+.semimar{
+    .container{
+        .list-seminar{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .s-item{
+                display: flex;
+                margin-bottom: 60px;
+                padding: 15px;
+                .image{
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .content{
+                    // margin-left: 40px;
+                    padding: 0 19px;
+                    .title{
+                        h2{
+                            color: #226E93;
+                            // font-weight: 300;
+                            font-size: 20px;
+                            margin-bottom: 0;
+                        }
+                    }
+                    .info{
+                        // padding: 15px 0;
+                        p{
+                            padding: 0;
+                            margin: 0;
+                        }
+                    }
+                    
+                }
+
+            }
+        }
+    }
+    .pagination{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        ul{
+            list-style: none;
+            padding: 0;
+            li{
+                display: inline-block;
+                margin: 0 10px;
+            }
+            input{
+                width: 40px;
+                font-family: cursive;
+            }
+        }
+    }
+
+}
+@media (max-width: 992px){
+    .container{
+        margin-top: unset;
+        .s-item{
+            // display: unset !important;
+            .image{
+                img{
+                    height: unset !important;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px){
+    .container{
+        margin-top: unset;
+        .s-item{
+            display: unset !important;
+            .image{
+                img{
+                    height: unset !important;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 500px){
+    .semimar{
+        .container{
+            .list-seminar{
+                display: flex;
+                flex-direction: column;
+                .col-6{
+                    width: unset;
+                }
+                .s-item{
+                    display: flex;
+                    flex-direction: column;
+                    .image{
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .col-5{
+                        width: unset;
+                    }
+                    .col-7{
+                        width: unset;
+                    }
+                    .content{
+                        margin-left: unset;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 200px){
+    .semimar 
+    {
+        .container{
+            .s-item {
+                .content{
+                    .title{
+                        h2{
+                            font-size: unset;
+                        }
+                    }
+                }
+            }
+        } 
+    }
+}

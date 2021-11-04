@@ -1,0 +1,39 @@
+.new-question{
+    .container{
+        width: 40%;
+        .form{
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            box-shadow: 0 15px 25px rgb(122, 122, 122);
+            border-radius: 10px;
+            background-color: aliceblue;
+            h2{
+                text-align: center;
+                color: palevioletred
+            }
+            .btn-submit{
+                text-align: center;
+                margin-top: 20px;
+            }
+            .form-group{
+                margin-top: 10px;
+                label{
+                    color: rgba(6, 114, 255, 0.986);
+                }
+            }
+        }
+    }
+}
+@media (max-width: 769px) {
+    .new-question{
+        .container{
+            .form{
+                text-align: center;
+                iframe{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
